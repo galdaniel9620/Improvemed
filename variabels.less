@@ -1,0 +1,157 @@
+//FONT-FAMILY
+@import url('https://fonts.googleapis.com/css2?family=Livvic&display=swap');
+
+*{
+    font-family: 'Livvic', sans-serif;
+}
+// SCREEN SIZE
+
+@screen-sm: 769px;
+@screen-sm-xs: 445px;
+@screen-xs: 374px;
+
+//COLORS
+@green: #7AADA1;
+@dark-green: #628A81;
+@brown: #B79366;
+@dark-brown: #927652;
+@gray: #53655F;
+@light-gray: #75847F;
+@black-haze: #F3F4F4;
+
+//TEXT-COLOR
+@white-t: #fff;
+@green-t: #7AADA1;
+@dark-gray-t: #53655F;
+@brown-t: #B79366;
+
+//TEXT-SIZE
+
+.lead-p {
+    font-size: 20px;
+
+    @media (min-width: @screen-sm) {
+        font-size: 23px;
+    }
+}
+
+p {
+    font-size: 18px;
+
+    @media (min-width: @screen-sm) {
+        font-size: 20px;
+    }
+}
+
+.body-p {
+    font-size: 17px;
+
+    @media (min-width: @screen-sm) {
+        font-size: 18px;
+    }
+}
+
+.small-p {
+    font-size: 15px;
+}
+
+.micro-p {
+    font-size: 13px;
+}
+
+.headline{
+    font-size: 35px;
+    font-weight: 700;
+
+    @media (min-width: @screen-sm) {
+        font-size: 65px;
+    }
+}
+
+h1 {
+    font-size: 30px;
+
+    @media (min-width: @screen-sm) {
+        font-size: 45px;
+    }
+}
+
+h2 {
+    font-size: 23px;
+
+    @media (min-width: @screen-sm) {
+        font-size: 30px;
+    }
+}
+
+h3 {
+    font-size: 21px;
+
+    @media (min-width: @screen-sm) {
+        font-size: 25px;
+    }
+}
+
+h4 {
+    font-size: 35px;
+
+    @media (min-width: @screen-sm) {
+        font-size: 23px;
+    }
+}
+
+.display-sm-t {
+    font-size: 13px;
+
+    @media (min-width: @screen-sm) {
+        font-size: 15px;
+    }
+}
+
+.display-lg-t {
+    font-size: 15px;
+
+    @media (min-width: @screen-sm) {
+        font-size: 17px;
+    }
+}
+
+input {
+    background: @black-haze;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    padding: 16px 22px;
+    width: calc(100% - 2 * 39px);
+    margin: 10px auto;
+
+    ::placeholder {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 19px;
+        color: #687E76;
+    }
+}
+
+
+//BUTTONS
+
+.btn {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    color: @white-t;
+    background-color: @green;
+    outline: none;
+    border: none;
+    padding: 16px 0;
+    width: calc(100% - 2 * 14px);
+    margin: 10px auto;
+    border-radius: 15px;
+
+    &:hover {
+        background-color: @dark-green;
+    }
+
+}
